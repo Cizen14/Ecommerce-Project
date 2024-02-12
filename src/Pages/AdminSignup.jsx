@@ -1,8 +1,12 @@
-import { LockClockOutlined } from '@mui/icons-material'
+
 import { Avatar, Box, Button, Checkbox, Container, CssBaseline, FormControlLabel, Grid, Link, TextField, Typography } from '@mui/material'
 import React from 'react'
+import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 
 const AdminSignup = () => {
+ 
+
+
   return (
     <Container component="main" maxWidth="xs">
     <CssBaseline />
@@ -71,7 +75,7 @@ const AdminSignup = () => {
               name="Repeat-password"
               label="Repeat-password"
               type="password"
-              id="password"
+              id="repeat-password"
               autoComplete="new-password"
             />
           </Grid>
